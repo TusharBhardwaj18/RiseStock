@@ -19,3 +19,7 @@ code {
 nav{
   background: transparent ;
 }
+.nav-link{
+  padding: 0.5rem 1rem;
+  
+}
