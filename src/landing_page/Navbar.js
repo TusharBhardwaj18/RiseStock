@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
       <nav class="navbar navbar-expand-lg " style={{height:'80px'}} >
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <Link class="navbar-brand" to="/">
       <img  style={{height:'100px', width:'100px'}}  src='images/Logo.png.png'  />
 
-    </a>
+    </Link>
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -16,29 +17,39 @@ const Navbar = () => {
    
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Signup</a>
+          <Link class="nav-link active" aria-current="page" to="/signup">
+            Signup
+          </Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">About</a>
+          <Link class="nav-link active" aria-current="page" to="/about">
+            About
+          </Link>
         </li>
          <li class="nav-item">
-          <a class="nav-link  active" href="#">Product</a>
+          <Link class="nav-link  active" aria-current="page" to="/product">
+            Product
+          </Link>
         </li>
          <li class="nav-item">
-          <a class="nav-link active" href="#">Pricing</a>
+          <Link class="nav-link active" aria-current="page" to="/pricing">
+            Pricing
+          </Link>
         </li>
          <li class="nav-item">
-          <a class="nav-link active" href="#">Support</a>
+          <Link class="nav-link active" aria-current="page" to="/support">
+            Support
+          </Link>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <Link class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             More
-          </a>
+          </Link>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Results</a></li>
-            <li><a class="dropdown-item" href="#">What's New</a></li>
-            <li><a class="dropdown-item" href="#">Explore</a></li>
-            <li><a class="dropdown-item" href="#">FAQs</a></li>
+            <li><Link class="dropdown-item" to="#">Results</Link></li>
+            <li><Link class="dropdown-item" to="#">What's New</Link></li>
+            <li><Link class="dropdown-item" to="#">Explore</Link></li>
+            <li><Link class="dropdown-item" to="#">FAQs</Link></li>
           </ul>
         </li>
        

@@ -9,12 +9,12 @@ import Footer from '../Footer'
 const HomePage = () => {
   return (
     <>
-    <Navbar />
+   
     <Hero />
     <Pricing />
     <Education />
     <OpenAccount />
-    <Footer />
+   
     </>
   )
 }

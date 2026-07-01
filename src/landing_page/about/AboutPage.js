@@ -1,9 +1,14 @@
 import React from 'react'
+import Hero from '../home/Hero'
+import Team from './Team'
 
-const AboutPage = () => {
+function PricingPage() {
   return (
-    <div>AboutPage</div>
-  )
+    <>
+    <Hero />
+    <Team />
+    </>
+  );
 }
 
-export default AboutPage
+export default PricingPage;
