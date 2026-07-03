@@ -12,7 +12,7 @@ const Hero = () => {
         <button className='p-3 btn btn-primary btn-lg px-5 py-3crounded-pill shadow-sm fw-bold bg-black' > Sign up </button>
         </div>
         </div>
-        <div className='col-6'>
+        <div className='col-6 mt-4'>
           <img src='images/HeroSection.png.jpeg' className='mb-5' style={{height: '650px', borderRadius:'45px'}} alt='Hero Image'></img>
        
         

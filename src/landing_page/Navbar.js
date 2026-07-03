@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-      <nav class="navbar navbar-expand-lg " style={{height:'80px'}} >
+      <nav class="navbar navbar-expand-lg fixed-top " style={{height:'80px'}} >
   <div class="container">
     <Link class="navbar-brand" to="/">
       <img  style={{height:'100px', width:'100px'}}  src='images/Logo.png.png'  />
