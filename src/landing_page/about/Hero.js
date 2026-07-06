@@ -2,9 +2,9 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="container">
+    <div className="container ">
       <div className="row p-5">
-        <h1 className="display-4 text-center fw-bold">About Us</h1>
+        <h1 className="display-4 text-center fw-bold mt-5">About Us</h1>
         <h2 className="text-center mb-5 mt-4 ">
           We pioneered the discount broking model in India. <br />
           Now, we are breaking ground with our technology.

@@ -1,8 +1,43 @@
 import React from 'react'
 
-const LeftSection = () => {
+const LeftSection = ({
+  imageURL,
+  productName,
+  productDesription,
+  tryDemo,
+  learnMore,
+  googlePlay,
+  appStore,
+}) => {
   return (
-    <div>LeftSection</div>
+   <div className="container mt-5">
+      <div className="row">
+        <div className="col-6">
+          <img src={imageURL} />
+        </div>
+        <div className="col-6 p-5 mt-5">
+          <h1>{productName}</h1>
+          <p className="lead ">{productDesription}</p>
+          <div>
+            <a href={tryDemo} style={{textDecoration:'none'}} >Try Demo</a>
+            <a href={learnMore} style={{ marginLeft: "80px" ,textDecoration:'none'}} >
+              Learn More
+            </a>
+          </div>
+          <div className="mt-3">
+            <a href={googlePlay}>
+              <img src="images/googlePlayBadge.svg" />
+            </a>
+            <a href={appStore}>
+              <img
+                src="images/appstoreBadge.svg"
+                style={{ marginLeft: "20px" }}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 

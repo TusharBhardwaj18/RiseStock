@@ -3,7 +3,7 @@ import React from 'react'
 const Pricing = () => {
   return (
      <div className="container">
-      <div className="row p-2   border-bottom text-center">
+      <div className="row p-2  border-bottom text-center">
         <h1 className='mt-0 display-4 fw-bold'>Pricing</h1>
         <h3 className="text-muted mt-3 fw-bold fs-5">
           Free equity investments and flat ₹20 traday and F&O trades
