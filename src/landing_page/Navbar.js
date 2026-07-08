@@ -3,19 +3,23 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-      <nav class="navbar navbar-expand-lg fixed-top " style={{height:'80px'}} >
-  <div class="container">
-    <Link class="navbar-brand" to="/">
-      <img  style={{height:'100px', width:'100px'}}  src='images/Logo.png.png'  />
-
+      <nav class="navbar navbar-expand-lg px-3 py-0 navbar-dark shadow-sm fixed-top  " style={{minHeight:'70px', backgroundColor:'rgb(20, 24, 37)'}} >
+  <div class="container-fluid">
+    <Link class="navbar-brand d-flex align-items-center" to="/">
+      <img className='img-fluid' style={{maxHeight:'65  px', width:'auto', objectFit:'contain'}}  src='images/Logo.png.png' alt='Logo' />
     </Link>
     
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
    
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-2">
+          <li class="nav-item">
+          <Link class="nav-link active" aria-current="page" to="/">
+            Home
+          </Link>
+        </li>
         <li class="nav-item">
           <Link class="nav-link active" aria-current="page" to="/signup">
             Signup
@@ -42,10 +46,10 @@ const Navbar = () => {
           </Link>
         </li>
         <li class="nav-item dropdown">
-          <Link class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <Link class="nav-link dropdown-toggle" to="#" role="button" id='navbarDropdownMenuLink' data-bs-toggle="dropdown" aria-expanded="false">
             More
           </Link>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby='navbarDropdownMenuLink'>
             <li><Link class="dropdown-item" to="#">Results</Link></li>
             <li><Link class="dropdown-item" to="#">What's New</Link></li>
             <li><Link class="dropdown-item" to="#">Explore</Link></li>
