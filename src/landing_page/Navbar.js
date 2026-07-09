@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-      <nav class="navbar navbar-expand-lg px-3 py-0 navbar-dark shadow-sm fixed-top  " style={{minHeight:'70px', backgroundColor:'rgb(20, 24, 37)'}} >
+      <nav class="navbar navbar-expand-lg px-3 py-0 navbar-dark shadow-sm fixed-top overflow-hidden " style={{minHeight:'50px', backgroundColor:'rgb(20, 24, 37)'}} >
   <div class="container-fluid">
     <Link class="navbar-brand d-flex align-items-center" to="/">
-      <img className='img-fluid' style={{maxHeight:'65  px', width:'auto', objectFit:'contain'}}  src='images/Logo.png.png' alt='Logo' />
+      <img className='img-fluid' style={{maxHeight:'53px', width:'auto', objectFit:'contain'}}  src='images/logo.png' alt='Logo' />
     </Link>
     
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,8 +14,8 @@ const Navbar = () => {
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
    
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-2">
-          <li class="nav-item">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0  align-items-lg-center gap-2">
+          <li class="nav-item ">
           <Link class="nav-link active" aria-current="page" to="/">
             Home
           </Link>
