@@ -16,32 +16,32 @@ const Navbar = () => {
    
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0  align-items-lg-center gap-2">
           <li class="nav-item ">
-          <Link class="nav-link active" aria-current="page" to="/">
+          <Link class="nav-link active text-white  link-primary" aria-current="page" to="/">
             Home
           </Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/signup">
+          <Link class="nav-link active text-white link-primary" aria-current="page" to="/signup">
             Signup
           </Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/about">
+          <Link class="nav-link active text-white link-primary" aria-current="page" to="/about">
             About
           </Link>
         </li>
          <li class="nav-item">
-          <Link class="nav-link  active" aria-current="page" to="/product">
+          <Link class="nav-link  active text-white link-primary" aria-current="page" to="/product">
             Product
           </Link>
         </li>
          <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/pricing">
+          <Link class="nav-link active text-white link-primary" aria-current="page" to="/pricing">
             Pricing
           </Link>
         </li>
          <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/support">
+          <Link class="nav-link active text-white link-primary" aria-current="page" to="/support">
             Support
           </Link>
         </li>

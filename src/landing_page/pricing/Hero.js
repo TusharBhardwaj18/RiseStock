@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className='container border-bottom overflow-hidden'>
       <div className='row justify-content-center mt-5'>
-      <h1 className='text-center mt-5 fs-1 '>Charges</h1>
+      <h1 className='text-center mt-5 fs-1 fw-bold '>Charges</h1>
       <h3 className='text-muted text-center mt-2 mb-5'>List of all charges and taxes</h3>
     </div>
       <div className="row g-5  text-center">

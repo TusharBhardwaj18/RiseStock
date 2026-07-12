@@ -11,7 +11,7 @@ const HomePage = () => {
     <>
    <div className='overflow-x-hidden'>
     <Hero />
-    <Pricing />
+    {/* <Pricing /> */}
     <Education />
     <OpenAccount />
     </div>
