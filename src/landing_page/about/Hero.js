@@ -1,21 +1,32 @@
-import React from "react";
+import React, {useEffect} from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css'
 
 const Hero = () => {
+  useEffect(() =>{
+        AOS.init({
+          duration:1000,
+          once: false,
+        });
+      }, []);
   return (
     <div className="container ">
       <div className="row p-5 justify-content-center text-center my-5">
         <div className="col-12 col-md-10 col-lg-8">
-        <h1 className="display-4 fw-bold mb-5">About Us</h1>
-        <h2 className="fs-4 text-muted fw-normal lh-base">
+        <h1 className="display-4 fw-bold mb-5" data-aos='fade-up'>About Us</h1>
+        <h2 className="fs-4 text-white-50 fw-normal lh-base"
+        data-aos='fade-up' data-aos-delay='200'>
           We pioneered the discount broking model in India. <br />
           Now, we are breaking ground with our technology.
         </h2>
         </div>
           <div>
-        <hr className="my-5 text-muted opacity-25" />
+        <hr className="my-5 text-muted opacity-25"
+        data-aos='fade-up'
+        data-aos-delay='400' />
       
-          <div className="row g-4 g-md-5">
-            <div className="col-12 col-md-6 text-secondary fs-5 lh-lg">
+          <div className="row g-4 g-md-5 border-top">
+            <div className="col-12 col-md-6 text-secondary fs-5 lh-lg" data-aos='fade-right' data-aos-delay='500'>
               <p className="">
                 We kick‑started our journey on 15th August 2010 with a mission
                 to remove every barrier that traders and investors face in India
@@ -32,7 +43,7 @@ const Hero = () => {
                 how India invests.
               </p>
             </div>
-            <div className="col-12 col-md-6 text-secondary fs-5 lh-lg">
+            <div className="col-12 col-md-6 text-secondary fs-5 lh-lg" data-aos='fade-left' data-aos-delay='700'>
               <p>
                 In addition to trading, we run several open online educational
                 and community initiatives designed to empower retail investors

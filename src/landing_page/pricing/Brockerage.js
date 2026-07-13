@@ -1,14 +1,22 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Brockerage = () => {
+  useEffect(() =>{
+      AOS.init({
+        duration:1000,
+        once: false,
+      });
+    }, []);
   return (
     <div className="container py-5 ">
-      <div className="row p-3 mt-2 justify-content-center border-bottom">
+      <div className="row p-4 mt-2 justify-content-center border-bottom" data-aos='fade-up' >
           <a href="" style={{ textDecoration: "none" }} className='text-center d-block mb-4'>
-            <h3 className="fs-3 fw-bold text-primary">Brokerage calculator</h3>
+            <h3 className="fs-3 fw-bold">Brokerage calculator</h3>
           </a>
           <ul
-            className="text-muted lh-lg fs-5 ps-3 ps-md-4"
+            className="text-white-50 lh-lg fs-5 ps-3 ps-md-4"
           >
             <li className='mb-3'>
               Call & Trade and RMS auto-squareoff:Additional charges of ₹50 +
@@ -33,12 +41,12 @@ const Brockerage = () => {
             </li>
           </ul>
           </div>
-        <div className="row p-3 mt-4 justify-content-center border-bottom ">
+        <div className="row p-4 mt-4 justify-content-center border-bottom " data-aos='fade-up' data-aos-delay='300'>
           <a href="" style={{ textDecoration: "none" }}>
             <h3 className="fs-3 fw-bold text-primary text-center mt-3 mb-5">Charges for account opening</h3>
           </a>
           <ul
-            className="text-muted lh-lg fs-5 ps-3 ps-md-4"
+            className="text-white-50 lh-lg fs-5 ps-3 ps-md-4"
           >
             <li className='mb-3'>
              Individual account - <span className='badge bg-success bg-opacity-100 text-white px-2 py-2 rounded-1 fw-medium font monospace' style={{ letterSpacing:'0.5px',fontSize:'13px'}}>FREE</span> 
