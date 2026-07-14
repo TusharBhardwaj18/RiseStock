@@ -5,7 +5,7 @@ import Team from './Team'
 function PricingPage() {
   return (
     <>
-    <div className='overflow-x-hidden'>
+    <div >
     <Hero />
     <Team />
     </div>

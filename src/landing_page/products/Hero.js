@@ -10,9 +10,9 @@ const Hero = () => {
           });
         }, []);
   return (
-    <div className="container border-bottom  ">
+    <div className="container border-bottom overflow-hidden ">
       <div className="text-center mt-5 p-5">
-      <div className="row ">
+      <div className="row justify-content-center ">
           <h1 className='fw-bold' data-aos='fade-up'> Products</h1>
           <h3 className=" text-white-50" data-aos-delay='200' data-aos='fade-up'>Sleek, modern, and intuitive trading platforms</h3>
           

@@ -10,7 +10,7 @@ const Hero = () => {
         });
       }, []);
   return (
-    <div className="container ">
+    <div className="container overflow-hidden ">
       <div className="row p-5 justify-content-center text-center my-5">
         <div className="col-12 col-md-10 col-lg-8">
         <h1 className="display-4 fw-bold mb-5" data-aos='fade-up'>About Us</h1>

@@ -49,17 +49,17 @@ const Brockerage = () => {
             className="text-white-50 lh-lg fs-5 ps-3 ps-md-4"
           >
             <li className='mb-3'>
-             Individual account - <span className='badge bg-success bg-opacity-100 text-white px-2 py-2 rounded-1 fw-medium font monospace' style={{ letterSpacing:'0.5px',fontSize:'13px'}}>FREE</span> 
+             Individual account → <span className='badge bg-success bg-opacity-100 text-white px-2 py-2 rounded-1 fw-medium font monospace' style={{ letterSpacing:'0.5px',fontSize:'13px'}}>FREE</span> 
             </li>
-            <li className='mb-3'>Minor account - <span className='badge bg-success bg-opacity-100 text-white px-2 py-2 rounded-1 fw-medium font monospace' style={{ letterSpacing:'0.5px',fontSize:'13px'}}>FREE</span> </li>
+            <li className='mb-3'>Minor account → <span className='badge bg-success bg-opacity-100 text-white px-2 py-2 rounded-1 fw-medium font monospace' style={{ letterSpacing:'0.5px',fontSize:'13px'}}>FREE</span> </li>
             <li className='mb-3'>
-             NRI account - ₹ 300 
-            </li>
-            <li className='mb-3'>
-             HUF account - <span className='badge bg-success bg-opacity-100 text-white px-2 py-2 rounded-1 fw-medium font monospace' style={{ letterSpacing:'0.5px',fontSize:'13px'}}>FREE</span>  (online) / ₹ 300 (offline)
+             NRI account → ₹ 300 
             </li>
             <li className='mb-3'>
-            Partnership, LLP, and Corporate accounts (offline only) - ₹ 300
+             HUF account → <span className='badge bg-success bg-opacity-100 text-white px-2 py-2 rounded-1 fw-medium font monospace' style={{ letterSpacing:'0.5px',fontSize:'13px'}}>FREE</span>  (online) / ₹ 300 (offline)
+            </li>
+            <li className='mb-3'>
+            Partnership, LLP, and Corporate accounts (offline only) → ₹ 300
             </li>
           </ul>
         </div>

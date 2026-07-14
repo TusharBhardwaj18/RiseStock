@@ -9,7 +9,7 @@ import Footer from '../Footer'
 const HomePage = () => {
   return (
     <>
-   <div className='overflow-x-hidden'>
+   <div >
     <Hero />
     {/* <Pricing /> */}
     <Education />
