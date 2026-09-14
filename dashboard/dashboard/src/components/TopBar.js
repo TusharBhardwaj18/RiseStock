@@ -21,7 +21,10 @@ const TopBar = () => {
         </div>
         <div className="col-12 col-md-8 px-3 py-2 d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center">
-            <img src="Logo.png.png" style={{ width: "100px" }} />
+            <img src="Logo.png.png" alt="Logo" style={{ width: "32px", height: 'auto' }} />
+               <span className="fw-semibold text-white fs-7 tracking -wide">
+              Rise<span className="text-success">Stock</span>
+            </span>
           </div>
 
         {/* Navigation Menu */}
