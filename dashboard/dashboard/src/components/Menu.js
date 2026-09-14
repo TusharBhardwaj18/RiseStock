@@ -1,99 +1,51 @@
 import React, { useState } from "react";
-
 import { Link } from "react-router-dom";
 
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
-  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
 
-  const handleMenuClick = (index) => {
-    setSelectedMenu(index);
-  };
-
-  const handleProfileClick = (index) => {
-    setIsProfileDropdownOpen(!isProfileDropdownOpen);
-  };
-
-  const menuClass = "menu";
-  const activeMenuClass = "menu selected";
+  const menuItems = [
+    { name: "Dashboard", path: "/" },
+    { name: "Orders", path: "/orders" },
+    { name: "Holdings", path: "/holdings" },
+    { name: "Positions", path: "/positions" },
+    { name: "Funds", path: "/funds" },
+    { name: "Apps", path: "/apps" },
+  ];
 
   return (
-    <div className="menu-container">
-      <img src="Logo.png.png" style={{ width: "100px" }} />
-      <div className="menus">
-        <ul>
-          <li>
+    <div className="d-flex align-items-center gap-4 small">
+      {/* Navigation Links */}
+      <ul className="navbar-nav d-flex flex-row gap-3 list-unstyled mb-0">
+        {menuItems.map((item, index) => (
+          <li key={item.name} className="nav-item">
             <Link
-              style={{ textDecoration: "none" }}
-              to="/"
-              onClick={() => handleMenuClick(0)}
+              to={item.path}
+              onClick={() => setSelectedMenu(index)}
+              className={`nav-link px-1 py-0 ${
+                selectedMenu === index
+                  ? "text-danger fw-medium"
+                  : "text-secondary"
+              }`}
+              style={{ textDecoration: "none"}}
             >
-              <p className={selectedMenu === 0 ? activeMenuClass : menuClass}>
-                Dashboard
-              </p>
+              {item.name}
             </Link>
           </li>
-          <li>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="/orders"
-              onClick={() => handleMenuClick(1)}
-            >
-              <p className={selectedMenu === 1 ? activeMenuClass : menuClass}>
-                Orders
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="/holdings"
-              onClick={() => handleMenuClick(2)}
-            >
-              <p className={selectedMenu === 2 ? activeMenuClass : menuClass}>
-                Holdings
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="/positions"
-              onClick={() => handleMenuClick(3)}
-            >
-              <p className={selectedMenu === 3 ? activeMenuClass : menuClass}>
-                Positions
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="funds"
-              onClick={() => handleMenuClick(4)}
-            >
-              <p className={selectedMenu === 4 ? activeMenuClass : menuClass}>
-                Funds
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="/apps"
-              onClick={() => handleMenuClick(6)}
-            >
-              <p className={selectedMenu === 6 ? activeMenuClass : menuClass}>
-                Apps
-              </p>
-            </Link>
-          </li>
-        </ul>
-        <hr />
-        <div className="profile" onClick={handleProfileClick}>
-          <div className="avatar">ZU</div>
-          <p className="username">USERID</p>
-        </div>
+        ))}
+      </ul>
+
+      {/* User Avatar Badge */}
+      <div
+        className="rounded-circle d-flex align-items-center justify-content-center text-secondary fw-semibold bg-light border"
+        style={{
+          width: "28px",
+          height: "28px",
+          fontSize: "10px",
+          cursor: "pointer",
+        }}
+      >
+        ZU
       </div>
     </div>
   );
