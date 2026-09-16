@@ -7,8 +7,19 @@ const Holdings = () => {
     <div className='holdings-container' />
     <h3 className='title'> Holdings ({holdings.length}) </h3>
     <div className='order-table'>
-      <table>
-        <thread>
+      <table style={{width: '100%', borderCollapse: 'collapse', tableLayout: 'fixed', display: 'table'}}>
+         <colgroup >
+         <col style={{ textAlign: 'left'}} />
+                <col style={{ width: '20%' }} />
+                <col style={{ width: '8%' }} />
+                <col style={{ width: '12%' }} />
+                <col style={{ width: '12%' }} />
+                <col style={{ width: '12%' }} />
+                <col style={{ width: '12%' }} />
+                <col style={{ width: '12%' }} />
+                <col style={{ width: '12%' }} />
+                </colgroup>
+        <thread style={{ display: 'table-header-group'}}>
         <tr>
           <th style={{ width: '20%', textAlign: 'left'}}>Instrument</th>
           <th style={{ width: '20%', textAlign: 'right'}}>Qty.</th>
@@ -30,7 +41,7 @@ const Holdings = () => {
           return(
             <tr key={index} >
           <td style={{ textAlign: 'left'}}>{stock.name}</td>
-          <td style={{ textAlign: 'right'}}> {stock.Qty || stock.name}</td>
+          <td style={{ textAlign: 'right'}}> {stock.qty || stock.name}</td>
           <td style={{ textAlign: 'right'}}>{Number(stock.avg).toFixed(2)}</td>
           <td style={{ textAlign: 'right'}}>{Number(stock.price).toFixed(2)}</td>
           <td style={{ textAlign: 'right'}}>{Number(curValue).toFixed(2)}</td>

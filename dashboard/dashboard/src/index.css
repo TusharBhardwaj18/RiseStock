@@ -67,9 +67,10 @@ body {
 .order-table table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
-.order-table th {
+/* .order-table th {
   padding: 12px 10px;
   font-size: 12px;
   font-weight: 500;
@@ -78,8 +79,14 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   text-align: right;
   background: transparent;
-}
+} */
 
+.order-table thead,
+.order-table tbody {
+    display: table-row-group;
+    width: 100%;
+}
+/* 
 .order-table td {
   padding: 14px 10px;
   font-size: 13px;
@@ -87,18 +94,24 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   text-align: right;
   background: transparent;
-}
+} */
 
 .order-table tr:hover td {
   background: rgba(255, 255, 255, 0.03);
 }
 
 /* Instrument column pinned to left */
-.order-table th:first-child,
+/* .order-table th:first-child,
 .order-table td:first-child {
   text-align: left;
   color: #f8fafc;
   font-weight: 500;
+} */
+
+.order-table th,
+.order-table td {
+ display: table-cell;
+padding: 8px 12px;
 }
 
 /* P&L Indicators */

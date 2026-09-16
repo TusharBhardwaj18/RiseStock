@@ -172,7 +172,7 @@ export const holdings = [
 export const positions = [
   {
     product: "CNC",
-    name: "EVEREADY",
+    name: "EVERYDAY",
     qty: 2,
     avg: 316.27,
     price: 312.35,
