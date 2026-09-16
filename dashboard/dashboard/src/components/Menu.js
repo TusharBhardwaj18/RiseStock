@@ -24,7 +24,7 @@ const Menu = () => {
               onClick={() => setSelectedMenu(index)}
               className={`nav-link px-1 py-0 ${
                 selectedMenu === index
-                  ? "text-danger fw-medium"
+                  ? "text-info fw-medium"
                   : "text-secondary"
               }`}
               style={{ textDecoration: "none"}}
