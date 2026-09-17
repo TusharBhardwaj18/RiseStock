@@ -30,19 +30,63 @@ body {
 
 /* Dashboard Split Layout */
 .dashboard-container {
-  display: flex;
-  width: 100%;
-  min-height: calc(100vh - 60px);
+  display: flex !important;
+  width: 100% !important;
+  height: calc(100vh - 60px);
+  overflow: hidden;
 }
 
 .watchlist-container {
-  width: 33.33%;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  height: calc(100vh - 60px);
+  width: 33.33% !important;
+  box-sizing: border-box;
+  flex: 0 0 33.33% !important;
+  max-width: 33.33% !important;
+  border-right: 1px solid #333;
   overflow-y: auto;
-  background: transparent;
 }
 
+.search-container {
+  position: relative;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+ box-sizing: border-box;
+}
+
+.search-container input {
+  width: 100% !important;
+  box-sizing: border-box;
+  }
+
+.search-container .counts{
+  position: absolute;
+  right:12px;
+  pointer-events: none;
+}
+
+.watchlist-items {
+  list-style: none;
+  padding: 4px ;
+  margin: 1px 0;
+}
+
+.watchlist-item {
+  list-style: none;
+  border-bottom: 1px solid #333;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.itemInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .content {
   width: 66.67%;
   padding: 25px 40px;
