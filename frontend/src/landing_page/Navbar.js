@@ -45,17 +45,17 @@ const Navbar = () => {
             Support
           </Link>
         </li>
-        <li class="nav-item dropdown">
-          <Link class="nav-link dropdown-toggle" to="#" role="button" id='navbarDropdownMenuLink' data-bs-toggle="dropdown" aria-expanded="false">
+        {/* <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" to="#" role="button" id='navbarDropdownMenuLink' data-bs-toggle="dropdown" aria-expanded="false">
             More
-          </Link>
+          </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby='navbarDropdownMenuLink'>
             <li><Link class="dropdown-item" to="#">Results</Link></li>
             <li><Link class="dropdown-item" to="#">What's New</Link></li>
             <li><Link class="dropdown-item" to="#">Explore</Link></li>
             <li><Link class="dropdown-item" to="#">FAQs</Link></li>
           </ul>
-        </li>
+        </li> */}
        
       </ul>
   
