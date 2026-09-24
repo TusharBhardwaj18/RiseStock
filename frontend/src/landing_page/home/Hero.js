@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
     useEffect(() =>{
@@ -20,7 +21,7 @@ const Hero = () => {
           <h1 className='mt-0 fs-1 fw-bold' data-aos='fade-up' data-aos-delay='200' >Rise with Confidence  </h1>
           <h2 className='fs-2  fw-bold' data-aos='fade-up' data-aos-delay='400'>Trade with Clarity</h2>
         <p className='pt-3 fw-bold text-white-50' data-aos='fade-up' data-aos-delay='600'>Your trusted partner in smart investing — secure trades, real‑time insights, and strategies designed to help your wealth grow.</p>
-        <button className='p-3 btn btn-lg px-5 py-3 rounded-pill fw-bold transition-all border-0'
+        <Link  to="/signup" className='p-3 btn btn-lg px-5 py-3 rounded-pill fw-bold transition-all border-0'
         data-aos='zoom-in' data-aos-delay='800'
         style={{
           background:'linear-gradient(45deg, #00f2fe 0%, #4facfe 100%)',
@@ -36,7 +37,7 @@ const Hero = () => {
           e.currentTarget.style.boxShadow = '0 4px 15px rgba(79, 172, 254, 0.4)';
         }}
 
-        > Sign up </button>
+        > Sign up </Link>
         </div>
         </div>
         </div>  </div>

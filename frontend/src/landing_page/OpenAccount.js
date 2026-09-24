@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom'
 
 const OpenAccount = () => {
    useEffect(() =>{
@@ -17,7 +18,7 @@ const OpenAccount = () => {
           <h1 className='mt-0  fw-bold'  data-aos='fade-up' data-aos-delay='100' >Open a RiseStock account  </h1>
         <p className='pt-3 text-white-50 fs-5'  data-aos='fade-up' data-aos-delay='200'>Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O trades.</p>
         <div className=' mt-4 d-flex justify-content-center'>
-        <button className='p-3 btn btn-lg fs-5 border-0 rounded-pill shadowsm col-10 col-sm-6 col-md-4 col-lg-3 ' data-aos='fade-up' data-aos-delay='600' 
+        <Link to="/signup" className='p-3 btn btn-lg fs-5 border-0 rounded-pill shadowsm col-10 col-sm-6 col-md-4 col-lg-3 ' data-aos='fade-up' data-aos-delay='600' 
          style={{
           background:'linear-gradient(45deg, #00f2fe 0%, #4facfe 100%)',
           boxShadow:'0 4px 15px rgba(79, 172, 254, 0.4)',
@@ -31,7 +32,7 @@ const OpenAccount = () => {
           e.currentTarget.style.transform = 'translateY(0)';
           e.currentTarget.style.boxShadow = '0 4px 15px rgba(79, 172, 254, 0.4)';
         }}
-        > Sign up Now </button>
+        > Sign up Now </Link>
         
         </div>
        </div>
